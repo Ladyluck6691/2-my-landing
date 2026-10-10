@@ -1,0 +1,22 @@
+:root {
+    /* Цвета (CSS-токены из ТЗ) */
+    --bg: #070707;
+    --bg-elevated: #101010;
+    --fg: #F5F5F6;
+    --fg-muted: rgba(245, 245, 245, 0.6);
+    --border: rgba(245, 245, 245, 0.12);
+    --accent: #B5FF4D;
+
+    /* Шрифты (Типографика из ТЗ) */
+    --font-mono: 'IBM Plex Mono', monospace;
+    --font-title: 'Bricolage Grotesque', 'Space Grotesque', sans-serif;
+    --font-text: 'Manrope', sans-serif;
+
+    /* Ритмика, сетка и скругления */
+    --section-padding: 60px;
+    --block-padding: 30px;
+    --gap-small: 15px;
+    --container-width: 1200px;
+    --radius: 1.25rem;
+    --hero-height: 85vh;
+}

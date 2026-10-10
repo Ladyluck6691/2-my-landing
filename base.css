@@ -1,0 +1,352 @@
+/* Сброс базовых отступов */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Базовые стили страницы */
+body {
+    background-color: var(--bg);
+    color: var(--fg);
+    font-family: var(--font-text);
+    line-height: 1.5;
+    min-height: 100vh;
+}
+
+/* Ограничитель ширины сайта (контейнер) */
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 var(--gap-small);
+}
+/* Стили шапки */
+.header {
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    background: rgba(7, 7, 7, 0.8);
+    backdrop-filter: blur(12px);
+    z-index: 100;
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+.logo {
+    font-family: var(--font-title);
+    font-weight: bold;
+    font-size: 1.3rem;
+    letter-spacing: -0.02em;
+}
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: var(--block-padding);
+}
+.nav-link {
+    color: var(--fg-muted);
+    text-decoration: none;
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    transition: color 0.2s ease;
+}
+.nav-link:hover {
+    color: var(--accent);
+}
+
+/* Кнопки */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.6rem 1.2rem;
+    border-radius: calc(var(--radius) * 0.7);
+    font-family: var(--font-text);
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+.btn-primary {
+    background-color: var(--accent);
+    color: var(--bg);
+}
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(181, 255, 77, 0.3);
+}
+.btn-secondary {
+    background-color: var(--bg-elevated);
+    color: var(--fg);
+    border: 1px solid var(--border);
+    margin-left: var(--gap-small);
+}
+.btn-secondary:hover {
+    background-color: var(--border);
+    transform: translateY(-2px);
+}
+
+/* Главный экран (Hero) */
+.hero {
+    min-height: var(--hero-height);
+    display: flex;
+    align-items: center;
+    padding: var(--section-padding) 0;
+}
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--gap-small);
+    max-width: 800px;
+}
+.badge {
+    background-color: var(--bg-elevated);
+    border: 1px solid var(--border);
+    padding: 0.3rem 0.8rem;
+    border-radius: 50px;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--accent);
+}
+.hero-title {
+    font-family: var(--font-title);
+    font-size: 3.5rem;
+    line-height: 1.1;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+}
+.text-accent {
+    color: var(--accent);
+}
+.hero-text {
+    font-size: 1.15rem;
+    color: var(--fg-muted);
+    max-width: 600px;
+    margin-bottom: var(--gap-small);
+}
+.case-card {
+    background-color: var(--bg-elevated);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+.case-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--accent);
+}
+/* Блок Услуги */
+.services-section {
+    padding: var(--section-padding) 0;
+    border-bottom: 1px solid var(--border);
+}
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--block-padding);
+}
+.service-card {
+    background-color: var(--bg-elevated);
+    border: 1px solid var(--border);
+    padding: var(--block-padding);
+    border-radius: var(--radius);
+    transition: all 0.3s ease;
+}
+
+.service-card:hover {
+    background-color: var(--bg-elevated);
+    border-color: var(--accent);
+    transform: translateY(-4px);
+}
+.service-icon {
+    font-size: 2rem;
+    margin-bottom: var(--gap-small);
+}
+.service-card h3 {
+    font-family: var(--font-title);
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+.service-card p {
+    color: var(--fg-muted);
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+/* Блок Процесс работы */
+.process-section {
+    padding: var(--section-padding) 0;
+    border-bottom: 1px solid var(--border);
+}
+.process-steps {
+    display: flex;
+    flex-direction: column;
+    gap: var(--block-padding);
+    max-width: 800px;
+    margin-top: var(--gap-small);
+}
+.step-item {
+    display: flex;
+    gap: var(--block-padding);
+    padding: var(--gap-small);
+    border-radius: var(--radius);
+    background-color: var(--bg-elevated);
+    border: 1px solid var(--border);
+    transition: all 0.3s ease;
+}
+/* Интерактивный ховер-эффект */
+.step-item:hover {
+    border-color: var(--accent);
+    transform: translateX(6px);
+}
+.step-number {
+    font-family: var(--font-mono);
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--accent);
+    line-height: 1;
+}
+.step-info h3 {
+    font-family: var(--font-title);
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+.step-info p {
+    color: var(--fg-muted);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+  /* Блок Цены */
+.prices-section {
+    padding: var(--section-padding) 0;
+    border-bottom: 1px solid var(--border);
+}
+.prices-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--block-padding);
+    max-width: 900px;
+    margin-top: var(--gap-small);
+}
+.price-card {
+    background-color: var(--bg-elevated);
+    border: 1px solid var(--border);
+    padding: calc(var(--block-padding) * 1.5);
+    border-radius: var(--radius);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-small);
+    transition: transform 0.3s ease;
+}
+.price-card:hover {
+    transform: translateY(-4px);
+}
+.price-card.featured {
+    border-color: var(--accent);
+    box-shadow: 0 4px 30px rgba(181, 255, 77, 0.05);
+}
+.price-card .card-badge {
+    position: absolute;
+    top: -12px;
+    right: 20px;
+    background-color: var(--accent);
+    color: var(--bg);
+    padding: 0.2rem 0.6rem;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: bold;
+    border-radius: 50px;
+}
+.price-card h3 {
+    font-family: var(--font-title);
+    font-size: 1.5rem;
+}
+.card-price {
+    font-family: var(--font-title);
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--fg);
+}
+.price-desc {
+    color: var(--fg-muted);
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+.price-features {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: var(--gap-small) 0;
+    padding: 0;
+}
+.price-features li {
+    font-size: 0.9rem;
+    color: var(--fg);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.price-features li::before {
+    content: "✓";
+    color: var(--accent);
+    font-weight: bold;
+}
+  /* Блок FAQ */
+.faq-section {
+    padding: var(--section-padding) 0;
+    border-bottom: 1px solid var(--border);
+}
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-small);
+    max-width: 800px;
+    margin-top: var(--gap-small);
+}
+.faq-item {
+    background-color: var(--bg-elevated);
+    border: 1px solid var(--border);
+    padding: var(--block-padding);
+    border-radius: var(--radius);
+}
+.faq-question {
+    font-family: var(--font-title);
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+}
+.faq-answer {
+    color: var(--fg-muted);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+/* Блок Контакты */
+.contact-section {
+    padding: var(--section-padding) 0;
+    padding-bottom: calc(var(--section-padding) * 1.5);
+}
+.contact-box {
+    background-color: var(--bg-elevated);
+    border: 1px solid var(--border);
+    padding: calc(var(--block-padding) * 1.5);
+    border-radius: var(--radius);
+    max-width: 600px;
+    margin-top: var(--gap-small);
+}
+.contact-text {
+    color: var(--fg-muted);
+    font-size: 1.05rem;
+    line-height: 1.5;
+    margin-bottom: var(--block-padding);
+}
+.contact-buttons {
+    display: flex;
+    gap: var(--gap-small);
+    flex-wrap: wrap;
+}

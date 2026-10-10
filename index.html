@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2-my-landing | Портфолио</title>
+    <link rel="stylesheet" href="tokens.css">
+    <link rel="stylesheet" href="base.css">
+</head>
+<body>
+
+    <!-- TASK 2: Шапка сайта -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">2-MY-LANDING</div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#cases" class="nav-link">Кейсы</a></li>
+                    <li><a href="#services" class="nav-link">Услуги</a></li>
+                    <li><a href="#process" class="nav-link">Процесс</a></li>
+                    <li><a href="#prices" class="nav-link">Цены</a></li>
+                    <li><a href="#faq" class="nav-link">FAQ</a></li>
+                </ul>
+            </nav>
+            <a href="#contact" class="btn btn-primary">Связаться</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- TASK 3 & 4: Главный экран (Hero) -->
+        <section class="hero">
+            <div class="container hero-container">
+                <div class="badge">Портфолио</div>
+                <h1 class="hero-title">Разрабатываю сайты, приложения и ИИ-агентов для <span class="text-accent">[Ваша Ниша]</span></h1>
+                <p class="hero-text">Создаю дорогие и профессиональные цифровые решения с упором на высокую конверсию, чистый код и современные вау-эффекты.</p>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-primary">Обсудить проект</a>
+                    <a href="#cases" class="btn btn-secondary">Смотреть кейсы</a>
+                </div>
+            </div>
+        </section>
+           <!-- Блок Кейсы -->
+           <section id="cases" style="padding: 60px 0; border-bottom: 1px solid var(--border);">
+            <div class="container">
+                <h2 style="font-family: var(--font-title); font-size: 2.5rem; margin-bottom: 30px;">Мои работы</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                    
+                    <!-- Карточка 1 -->
+                    <div class="case-card">
+                        <div style="background: #161616; height: 200px; display: flex; align-items: center; justify-content: center; color: var(--fg-muted);">Учебный проект 1</div>
+                        <div style="padding: 20px;">
+                            <h3 style="font-family: var(--font-title); margin-bottom: 10px;">Сайт-портфолио</h3>
+                            <p style="color: var(--fg-muted); font-size: 0.9rem;">Первый адаптивный лендинг на чистом HTML и CSS.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+       <!-- TASK 6: Блок Услуги -->
+       <section id="services" class="services-section">
+        <div class="container">
+            <div class="badge">Что я делаю</div>
+            <h2 class="section-title">Мои услуги</h2>
+            
+            <div class="services-grid">
+                <!-- Услуга 1 -->
+                <div class="service-card">
+                    <div class="service-icon">💻</div>
+                    <h3>Вёрстка лендингов</h3>
+                    <p>Создание адаптивных и быстрых одностраничных сайтов на чистом HTML и CSS по готовым макетам.</p>
+                </div>
+
+                <!-- Услуга 2 -->
+                <div class="service-card">
+                    <div class="service-icon">⚡</div>
+                    <h3>Интерактивные эффекты</h3>
+                    <p>Оживление интерфейса: добавление плавной анимации, ховер-эффектов и адаптивной сетки.</p>
+                </div>
+            </div>
+        </div>
+    </section>       
+            </div>
+        </section>
+        <!-- TASK 7: Блок Процесс работы -->
+        <section id="process" class="process-section">
+            <div class="container">
+                <div class="badge">Этапы</div>
+                <h2 class="section-title">Как строится работа</h2>
+                
+                <div class="process-steps">
+                    <!-- Шаг 1 -->
+                    <div class="step-item">
+                        <div class="step-number">01</div>
+                        <div class="step-info">
+                            <h3>Брифинг и ТЗ</h3>
+                            <p>Созваниваемся, обсуждаем ваши задачи и цели. Я составляю детальное техническое задание.</p>
+                        </div>
+                    </div>
+
+                    <!-- Шаг 2 -->
+                    <div class="step-item">
+                        <div class="step-number">02</div>
+                        <div class="step-info">
+                            <h3>Разработка и верстка</h3>
+                            <p>Пишу чистый, профессиональный код на HTML и CSS. Настраиваю современные вау-эффекты.</p>
+                        </div>
+                    </div>
+
+                    <!-- Шаг 3 -->
+                    <div class="step-item">
+                        <div class="step-number">03</div>
+                        <div class="step-info">
+                            <h3>Тесты и запуск</h3>
+                            <p>Проверяю сайт на всех телефонах и компьютерах. Помогаю выложить готовый лендинг в интернет.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+       <!-- TASK 8: Блок Цены -->
+       <section id="prices" class="prices-section">
+        <div class="container">
+            <div class="badge">Стоимость</div>
+            <h2 class="section-title">Прозрачные тарифы</h2>
+            
+            <div class="prices-grid">
+                <!-- Тариф 1 -->
+                <div class="price-card">
+                    <h3>Лендинг «Старт»</h3>
+                    <div class="card-price">от 15 000 ₽</div>
+                    <p class="price-desc">Идеально для быстрого запуска услуг или тестирования ниши.</p>
+                    <ul class="price-features">
+                        <li>Адаптивный дизайн</li>
+                        <li>Чистый код (HTML/CSS)</li>
+                        <li>Срок: до 5 дней</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-secondary" style="margin-left: 0; width: 100%; text-align: center; justify-content: center;">Выбрать</a>
+                </div>
+
+                <!-- Тариф 2 -->
+                <div class="price-card featured">
+                    <div class="card-badge">Популярно</div>
+                    <h3>Бизнес-лендинг</h3>
+                    <div class="card-price">от 30 000 ₽</div>
+                    <p class="price-desc">Эксклюзивный сайт со всеми вау-эффектами под ключ.</p>
+                    <ul class="price-features">
+                        <li>Индивидуальный дизайн</li>
+                        <li>Интерактивные анимации</li>
+                        <li>Базовая SEO-оптимизация</li>
+                        <li>Срок: до 10 дней</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary" style="width: 100%; text-align: center; justify-content: center;">Заказать</a>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- TASK 9: Блок FAQ -->
+     <section id="faq" class="faq-section">
+        <div class="container">
+            <div class="badge">Вопросы</div>
+            <h2 class="section-title">Часто задаваемые вопросы</h2>
+            
+            <div class="faq-list">
+                <!-- Вопрос 1 -->
+                <div class="faq-item">
+                    <div class="faq-question">Входит ли в стоимость наполнение текстом?</div>
+                    <div class="faq-answer">Да, мы детально прорабатываем структуру и пишем продающие тексты на основе вашего брифа.</div>
+                </div>
+
+                <!-- Вопрос 2 -->
+                <div class="faq-item">
+                    <div class="faq-question">Будет ли сайт открываться на смартфонах?</div>
+                    <div class="faq-answer">Конечно. Все сайты верстаются адаптивными и идеально отображаются на любых экранах — от мобильных телефонов до больших мониторов.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- TASK 10: Блок Контакты -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="badge">Связь</div>
+                <h2 class="section-title">Обсудить проект</h2>
+                
+                <div class="contact-box">
+                    <p class="contact-text">Готовы создать крутой продукт? Напишите мне в удобный мессенджер или оставьте заявку, и я отвечу вам в течение часа.</p>
+                    <div class="contact-buttons">
+                        <a href="https://t.me" class="btn btn-primary" target="_blank">Telegram</a>
+                        <a href="mailto:your_email@example.com" class="btn btn-secondary" style="margin-left: 0;">Email</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+</main>
+
+    <footer>
+        <div class="container">
+            <p style="text-align: center; padding: var(--block-padding) 0; color: var(--fg-muted); font-family: var(--font-mono); font-size: 0.85rem;">
+                &copy; 2026 2-my-landing. Все права защищены.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
